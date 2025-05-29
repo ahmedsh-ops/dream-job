@@ -218,7 +218,7 @@
             transition: 3s;
         }
 
-        .welcome.show-car {
+        .welcome.show-img {
             opacity: 1;
             transform: translateX(0);
         }
@@ -304,12 +304,24 @@
         }
 
         .img img {
-            width: 300px;
-            transition: 1s;
+            width: 250px;
+            transition: 1.5s;
         }
 
         .img img:hover {
             transform: scale(1.1);
+        }
+
+        .about-img {
+            opacity: 0;
+            margin: auto;
+            transform: scale(0.5) translateX(-100%);
+            transition: 3s;
+        }
+
+        .about-img.show-img {
+            opacity: 1;
+            transform: translateX(0);
         }
 
         .skills {
@@ -531,8 +543,9 @@
         }
 
         .contact-img {
+            width: 300px;
             align-self: flex-end;
-            transform: translate(0px, -9px);
+            transform: translate(0px, -65px);
         }
 
         .footer {
