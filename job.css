@@ -128,11 +128,12 @@
         }
 
         .hero-text img {
-            transform: translate(90px, 68px);
+            width: 120px;
+            transform: translate(2.5rem, 121px);
         }
 
         .hero-text h2 {
-            font: 8.5em sans-serif;
+            font: 7rem sans-serif;
             font-weight: 900;
             color: #c20000;
             overflow: hidden;
@@ -147,12 +148,9 @@
         }
 
         .hero-text h2 span {
-            color: #000000;
-            transition: 2s;
-        }
-
-        .hero-text h2 .t1:hover {
-            transform: translateY(-20px);
+            font-size: 6rem;
+            position: absolute;
+            transform: translate(0px, 70px);
         }
 
         .hero-text h3 {
@@ -216,7 +214,7 @@
 
         .welcome {
             opacity: 0;
-            transform: translateX(150px);
+            transform: translateY(150px);
             transition: 2s;
         }
 
@@ -681,7 +679,7 @@
 
             .hero-text img {
                 width: 110px;
-                transform: translate(50px, 52px);
+                transform: translate(30px, 95px);
             }
 
             .hero-text h2 {
@@ -700,7 +698,9 @@
             }
 
             .hero-text h2 span {
-                color: #000000;
+                font-size: 5rem;
+                position: absolute;
+                transform: translate(0px, 50px);
             }
 
             .hero-text h3 {
@@ -839,11 +839,11 @@
 
             .hero-text img {
                 width: 80px;
-                transform: translate(10px, 30px);
+                transform: translate(20px, 84px);
             }
 
             .hero-text h2 {
-                font: 3.2em sans-serif;
+                font: 4.8rem sans-serif;
                 font-weight: 900;
                 color: #c20000;
                 overflow: hidden;
@@ -858,8 +858,9 @@
             }
 
             .hero-text h2 span {
-                color: #000000;
-                transition: 2s;
+                font-size: 3.8rem;
+                position: absolute;
+                transform: translate(0px, 50px);
             }
 
             .hero-text h3 {
