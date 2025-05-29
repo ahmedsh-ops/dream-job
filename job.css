@@ -434,6 +434,7 @@
         .contact {
             width: 100%;
             height: 100vh;
+            margin: auto;
             background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
         }
 
@@ -767,6 +768,12 @@
                 transform: scale(1.1);
             }
 
+            .contact {
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+        }
 
         }
 
@@ -1023,5 +1030,11 @@
                 border-radius: 50px;
             }
 
+            .contact {
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+        }
 
         }
