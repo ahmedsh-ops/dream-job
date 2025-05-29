@@ -63,7 +63,7 @@
             justify-content: space-between;
             align-items: center;
             height: 50px;
-            background:rgba(255, 255, 255, 0.637);
+            background: rgba(255, 255, 255, 0.637);
             border-radius: 5px;
             padding: 10px 40px;
             margin-right: 0px;
@@ -200,9 +200,9 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            height: 700px;
-            width: 400px;
-            transform: translate(250px, -550px);
+            height: 500px;
+            width: 300px;
+            transform: translate(250px, -450px);
             border-radius: 50%;
             z-index: 99;
         }
@@ -247,10 +247,11 @@
             display: flex;
             gap: 5%;
             flex-wrap: wrap;
-            justify-content: center;
             background-size: cover;
             background-position: center;
+            margin: auto;
             width: 100%;
+            height: 100vh;
         }
 
         .text {
@@ -275,7 +276,7 @@
         #about ul {
             display: flex;
             list-style-type: none;
-            margin: 10px 0px 30px 0px;
+            margin: 10;
             padding: 10;
             gap: 35px;
         }
@@ -294,7 +295,7 @@
         }
 
         .img img {
-            width: 500px;
+            width: 300px;
             transition: 1s;
         }
 
@@ -321,7 +322,7 @@
             padding: 50px 50px 0px;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: 100vh;
             background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 214, 0, 1) 50% 50%);
             background-size: cover;
             background-position: center;
@@ -330,7 +331,7 @@
         #My {
             color: #c20000;
             font-size: 3rem;
-            margin: 70px 0px 80px 0px;
+            margin: 70px 0px 0px 0px;
             text-align: center;
         }
 
@@ -695,10 +696,10 @@
             }
 
             .hero-text h4 {
-            font: 1.3em sans-serif;
-            font-weight: 600;
-            color: #c20000;
-        }
+                font: 1.3em sans-serif;
+                font-weight: 600;
+                color: #c20000;
+            }
 
             .hero-text button {
                 border: none;
@@ -726,7 +727,8 @@
                 top: 50%;
                 left: 50%;
                 height: 500px;
-                transform: translate(50px, -450px);
+                width: 300px;
+                transform: translate(50px, -400px);
                 border-radius: 50%;
                 z-index: 99;
             }
@@ -738,20 +740,49 @@
                 margin: 0px 0px -20px 0px;
             }
 
+            .about-me {
+                background-color: rgba(255, 214, 0, 1);
+                display: flex;
+                gap: 5%;
+                flex-wrap: wrap;
+                background-size: cover;
+                background-position: center;
+                margin: auto;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .img {
+                margin: auto;
+            }
+
+            .img img {
+                width: 300px;
+                transition: 1s;
+                border-radius: 50%;
+                margin-bottom: -90px;
+            }
+
+            .img img:hover {
+                transform: scale(1.1);
+            }
+
 
         }
 
         @media all and (min-width: 481px) and (max-width: 768px) {
             nav ul {
                 position: absolute;
-                top: 94px;
+                top: 104px;
                 left: 0;
                 right: 0;
                 flex-direction: column;
                 align-items: center;
                 background: rgba(255, 255, 255, 0.637);
                 padding: 0px;
-                border-radius: 5px;
+                width: 100%;
+                border-radius: 0px 0px 5px 5px;
+                margin: 0px auto;
                 gap: 0px;
                 overflow: hidden;
             }
@@ -808,8 +839,8 @@
 
             .hero-text h4 {
                 font: 1em sans-serif;
-            font-weight: 600;
-            color: #c20000;
+                font-weight: 600;
+                color: #c20000;
             }
 
             .hero-text button {
@@ -833,15 +864,28 @@
                 border: 3px solid #c20000;
             }
 
+
+
             .zoom-box {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                height: 400px;
-                width: 300px;
-                transform: translate(0px, -350px);
-                border-radius: 50%;
+                height: 450px;
+                width: 250px;
+                transform: translate(50px, -350px);
                 z-index: 99;
+            }
+
+            .about-me {
+                background-color: rgba(255, 214, 0, 1);
+                display: flex;
+                gap: 5%;
+                flex-wrap: wrap;
+                background-size: cover;
+                background-position: center;
+                margin: auto;
+                width: 100%;
+                height: 100vh;
             }
 
             .text {
@@ -884,7 +928,7 @@
             }
 
             .img img {
-                width: 400px;
+                width: 250px;
                 transition: 1s;
                 border-radius: 50%;
                 margin-bottom: -90px;
