@@ -215,7 +215,7 @@
         .welcome {
             opacity: 0;
             transform: scale(0.5) translateX(-100%);
-            transition: 2s;
+            transition: 3s;
         }
 
         .welcome.show-car {
