@@ -275,7 +275,7 @@
         #about ul {
             display: flex;
             list-style-type: none;
-            margin: 10;
+            margin: 10px 0px 30px 0px;
             padding: 10;
             gap: 35px;
         }
