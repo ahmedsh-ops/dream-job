@@ -214,6 +214,17 @@
             border-radius: 30%;
         }
 
+        .welcome {
+            opacity: 0;
+            transform: translateX(150px);
+            transition: 2s;
+        }
+
+        .welcome.show-car {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
         #social-media {
             position: fixed;
             bottom: 20px;
@@ -521,7 +532,7 @@
             color: #ffffff;
         }
 
-        .contact-img{
+        .contact-img {
             align-self: flex-end;
             transform: translate(0px, -9px);
         }
@@ -741,10 +752,10 @@
             }
 
             #social-media i {
-            font-size: 2rem;
-            color: #c20000;
-            background-color: transparent;
-        }
+                font-size: 2rem;
+                color: #c20000;
+                background-color: transparent;
+            }
 
             .text .skills {
                 font-size: 1rem;
@@ -781,16 +792,16 @@
             }
 
             .contact {
-            width: 100%;
-            height: 100vh;
-            margin: auto;
-            background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
-        }
+                width: 100%;
+                height: 100vh;
+                margin: auto;
+                background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+            }
 
-        .contact-img{
-            align-self: flex-end;
-            transform: translate(0px, -50px);
-        }
+            .contact-img {
+                align-self: flex-end;
+                transform: translate(0px, -50px);
+            }
 
         }
 
@@ -901,10 +912,10 @@
             }
 
             #social-media i {
-            font-size: 2rem;
-            color: #c20000;
-            background-color: transparent;
-        }
+                font-size: 2rem;
+                color: #c20000;
+                background-color: transparent;
+            }
 
             .about-me {
                 background-color: rgba(255, 214, 0, 1);
@@ -1055,16 +1066,16 @@
             }
 
             .contact {
-            width: 100%;
-            height: 100vh;
-            margin: auto;
-            background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
-        }
+                width: 100%;
+                height: 100vh;
+                margin: auto;
+                background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+            }
 
-        .contact-img{
-            width: 360px;
-            align-self: flex-end;
-            transform: translate(0px, 50px);
-        }
+            .contact-img {
+                width: 360px;
+                align-self: flex-end;
+                transform: translate(0px, 50px);
+            }
 
         }

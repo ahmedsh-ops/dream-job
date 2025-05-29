@@ -9,11 +9,18 @@ function changeWelcome() {
   document.getElementById("welcome-text").innerText = "You can be a great developer too! 💻🚀";
 }
 
-window.onload = function () {
-  const el = document.getElementById("WWW");
-  el.style.opacity = 1;
-  el.style.transform = "translateX(0)";
-};
+const observerr = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-car");
+    }
+  });
+});
+
+const cars = document.querySelectorAll('.welcome');
+cars.forEach(car => {
+  observerr.observe(car);
+});
 
 let menuList = document.getElementById("menu")
 menuList.style.maxHeight = "0px";
