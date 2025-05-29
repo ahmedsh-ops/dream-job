@@ -1062,8 +1062,9 @@
         }
 
         .contact-img{
+            width: 360px;
             align-self: flex-end;
-            transform: translate(0px, -90px);
+            transform: translate(0px, -900px);
         }
 
         }
