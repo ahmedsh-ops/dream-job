@@ -1076,7 +1076,7 @@
             .contact-img {
                 width: 360px;
                 align-self: flex-end;
-                transform: translate(0px, 50px);
+                transform: translate(0px, 900px);
             }
 
         }
