@@ -12,7 +12,7 @@ function changeWelcome() {
 const observerr = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("show-car");
+      entry.target.classList.add("show-img");
     }
   });
 });
@@ -32,3 +32,16 @@ function toggleMenu() {
     menuList.style.maxHeight = "0px";
   }
 }
+
+const observerrr = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-img");
+    }
+  });
+});
+
+const imgs = document.querySelectorAll('.about-img');
+imgs.forEach(imgg => {
+  observerr.observe(imgg);
+});
