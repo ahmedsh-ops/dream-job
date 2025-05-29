@@ -1049,7 +1049,14 @@
                 width: 230px;
                 font-size: 2.5rem;
                 padding: 90px 0px;
-                margin: 0px auto;
+                margin: auto;
+            }
+
+            .contact-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto 0;
             }
 
             .contact-form form {
