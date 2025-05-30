@@ -117,12 +117,15 @@
 
         .hero {
             align-content: center;
-            height: 50vh;
+            height: 100vh;
             margin-left: 20px;
-            transform: translate(0px, 230px);
+            margin: auto;
+            border: 5px solid #c20000;
         }
 
         .hero-text {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -132,10 +135,16 @@
             transform: translate(2.5rem, 121px);
         }
 
+        
+
         .hero-text h2 {
-            font: 7rem sans-serif;
+            font: 6rem sans-serif;
             font-weight: 900;
             color: #c20000;
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            margin: 200px 0px 50px 0px;
             overflow: hidden;
             width: 100%;
             animation: typing 3s linear;
@@ -146,6 +155,30 @@
                 width: 0;
             }
         }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .hero-text .aginN {
+            position: absolute;
+            font: 6rem sans-serif;
+            font-weight: 900;
+            color: #c2000000;
+            -webkit-text-stroke: 3px rgb(255, 255, 255);
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            margin: -66px 0px 50px 0px;
+            overflow: hidden;
+            width: 100%;
+            animation: typing 3s linear;
+            z-index: 150;
+
+        }
+        
 
         .hero-text h2 span {
             font-size: 6rem;
@@ -158,8 +191,9 @@
             font-weight: 700;
             color: rgba(255, 214, 0, 1);
             font-weight: 500;
-            border-left: 5px solid #c20000;
-            margin-bottom: 20px;
+            border: 5px solid #c20000;
+            border-radius: 20px;
+            margin-bottom: 50px;
             background-color: #ffffff00;
         }
 
@@ -167,6 +201,7 @@
             font: 1.5em sans-serif;
             font-weight: 600;
             color: #c20000;
+            margin-bottom: 30px;
         }
 
         .hero-text h3 .texx:hover {
@@ -196,31 +231,27 @@
 
         .zoom-box {
             position: absolute;
+            background: url("/img/peeps-avatar-alpha (2).png") no-repeat;
+            background-size: cover;
+            background-position: center;
             top: 50%;
-            left: 50%;
-            height: 500px;
-            width: 300px;
-            transform: translate(250px, -550px);
+            left: 40%;
+            height: 400px;
+            width: 270px;
+            transform: translateY(-620px);
             border-radius: 50%;
             z-index: 99;
         }
 
-        .zoom-box img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            border-radius: 30%;
-        }
-
         .welcome {
             opacity: 0;
-            transform: scale(0.5) translateX(-100%);
+            transform: translateY(120px);
             transition: 3s;
         }
 
         .welcome.show-img {
             opacity: 1;
-            transform: translateX(0);
+            transform: translateY(0);
         }
 
         #social-media {
@@ -696,7 +727,7 @@
             }
 
             .hero-text h2 {
-                font: 6em sans-serif;
+                font: 5em sans-serif;
                 font-weight: 900;
                 color: #c20000;
                 overflow: hidden;
@@ -710,11 +741,22 @@
                 }
             }
 
-            .hero-text h2 span {
-                font-size: 5rem;
-                position: absolute;
-                transform: translate(0px, 50px);
-            }
+            .hero-text .aginN {
+            position: absolute;
+            font: 5rem sans-serif;
+            font-weight: 900;
+            color: #c2000000;
+            -webkit-text-stroke: 3px rgb(255, 255, 255);
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            margin: -5px 0px 50px 20px;
+            overflow: hidden;
+            width: 100%;
+            animation: typing 3s linear;
+            z-index: 150;
+
+        }
 
             .hero-text h3 {
                 font-size: 3rem;
@@ -754,15 +796,18 @@
             }
 
             .zoom-box {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                height: 500px;
-                width: 300px;
-                transform: translate(100px, -500px);
-                border-radius: 50%;
-                z-index: 99;
-            }
+            position: absolute;
+            background: url("/img/peeps-avatar-alpha (2).png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 50%;
+            left: 40%;
+            height: 350px;
+            width: 200px;
+            transform: translateY(-550px);
+            border-radius: 50%;
+            z-index: 99;
+        }
 
             #social-media i {
                 font-size: 2rem;
@@ -856,7 +901,7 @@
             }
 
             .hero-text h2 {
-                font: 4.8rem sans-serif;
+                font: 4rem sans-serif;
                 font-weight: 900;
                 color: #c20000;
                 overflow: hidden;
@@ -870,11 +915,22 @@
                 }
             }
 
-            .hero-text h2 span {
-                font-size: 3.8rem;
-                position: absolute;
-                transform: translate(0px, 50px);
-            }
+            .hero-text .aginN {
+            position: absolute;
+            font: 4rem sans-serif;
+            font-weight: 900;
+            color: #c2000000;
+            -webkit-text-stroke: 3px rgb(255, 255, 255);
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0px 50px 7px;
+            overflow: hidden;
+            width: 100%;
+            animation: typing 3s linear;
+            z-index: 150;
+
+        }
 
             .hero-text h3 {
                 font-size: 2rem;
@@ -913,17 +969,19 @@
                 border: 3px solid #c20000;
             }
 
-
-
             .zoom-box {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                height: 450px;
-                width: 250px;
-                transform: translate(50px, -400px);
-                z-index: 99;
-            }
+            position: absolute;
+            background: url("/img/peeps-avatar-alpha (2).png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 50%;
+            left: 37%;
+            height: 300px;
+            width: 200px;
+            transform: translateY(-450px);
+            border-radius: 50%;
+            z-index: 99;
+        }
 
             #social-media i {
                 font-size: 2rem;
