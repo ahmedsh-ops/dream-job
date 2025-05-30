@@ -176,14 +176,6 @@
             width: 100%;
             animation: typing 3s linear;
             z-index: 150;
-
-        }
-        
-
-        .hero-text h2 span {
-            font-size: 6rem;
-            position: absolute;
-            transform: translate(0px, 70px);
         }
 
         .hero-text h3 {
