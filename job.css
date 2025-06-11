@@ -29,8 +29,8 @@
  }
 
  .D {
-    color: #000000;
-    font-size: 40px;
+     color: #000000;
+     font-size: 40px;
      padding: 0px 0px;
      width: 100px;
      height: 100px;
@@ -162,7 +162,16 @@
      margin: 200px 0px 50px 0px;
      overflow: hidden;
      width: 100%;
-     animation: typing 3s linear;
+     animation: typing 2s linear;
+ }
+
+ .hero-text h2::before {
+     content: "FRONT_END_DEVELOPER";
+     color: #6b38381e;
+     animation: typing 2s linear infinite;
+     position: absolute;
+     -webkit-text-stroke: 3px rgb(255, 255, 255);
+     z-index: 150;
  }
 
  @keyframes typing {
@@ -381,7 +390,6 @@
      padding: 50px 50px 0px;
      justify-content: center;
      align-items: center;
-     height: 100vh;
      background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 214, 0, 1) 50% 50%);
      background-size: cover;
      background-position: center;
@@ -389,20 +397,23 @@
 
  #My {
      color: #c20000;
-     font-size: 3rem;
-     margin: 70px 0px 0px 0px;
+     font-size: 5rem;
+     margin: 70px 0px 70px 0px;
      text-align: center;
  }
 
  #ALL {
      display: flex;
-     align-items: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     background-size: cover;
+     background-position: center;
+     margin: auto;
      justify-content: center;
+     align-items: center;
      width: 100%;
-     height: 100%;
      font-size: 40px;
      font-family: "Lobster", sans-serif;
-     gap: 40px;
      overflow: auto;
      padding: 0px 0px;
  }
@@ -492,7 +503,6 @@
 
  .contact {
      width: 100%;
-     height: 100vh;
      margin: auto;
      background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
  }
@@ -695,7 +705,7 @@
      color: #c20000;
  }
 
- @media all and (min-width: 769px) and (max-width: 1279px) {
+ @media (max-width: 1279px) {
      nav ul {
          position: absolute;
          top: 104px;
@@ -724,7 +734,7 @@
 
      .responsive {
          display: block;
-         transition: all 1s;
+         transition: all 4s;
      }
 
      .hero-text img {
@@ -741,26 +751,19 @@
          animation: typing 3s linear;
      }
 
+     .hero-text h2::before {
+         content: "FRONT_END_DEVELOPER";
+         color: #6b38381e;
+         animation: typing 2s linear infinite;
+         position: absolute;
+         -webkit-text-stroke: 3px rgb(255, 255, 255);
+         z-index: 150;
+     }
+
      @keyframes typing {
          from {
              width: 0;
          }
-     }
-
-     .hero-text .aginN {
-         position: absolute;
-         font: 5rem sans-serif;
-         font-weight: 900;
-         color: #c2000000;
-         -webkit-text-stroke: 3px rgb(255, 255, 255);
-         margin: 0px auto;
-         align-items: center;
-         text-align: center;
-         margin: -5px 0px 50px 0px;
-         overflow: hidden;
-         width: 100%;
-         animation: typing 3s linear;
-         z-index: 150;
      }
 
      .hero-text h3 {
@@ -867,10 +870,28 @@
      }
  }
 
- @media all and (min-width: 481px) and (max-width: 768px) {
-     nav ul {
+ @media all and (min-width: 481px) and (max-width: 1000px) {
+    nav h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.637);
+        border-radius: 5px;
+        padding: 10px 40px;
+        margin-right: 0px;
+        margin-top: -100px;
+    }
+
+    nav ul {
          position: absolute;
-         top: 104px;
+         top: 154px;
          left: 0;
          right: 0;
          flex-direction: column;
@@ -890,15 +911,18 @@
 
      nav ul li a {
          color: #c20000;
-         font-size: 1.3em;
+         font-size: 2em;
          font-weight: 700;
      }
 
      .responsive {
          display: block;
-         transition: all 1s;
+         transition: all 6s;
      }
-
+     .responsive i{
+         font-size: 3rem;
+         color: #c20000;
+     }
      .hero-text img {
          width: 80px;
          transform: translate(20px, 84px);
@@ -910,7 +934,24 @@
          color: #c20000;
          overflow: hidden;
          width: 100%;
-         animation: typing 3s linear;
+         animation: typing 2s linear;
+     }
+
+
+
+     @keyframes typing {
+         from {
+             width: 0;
+         }
+     }
+
+     .hero-text h2::before {
+         content: "FRONT_END_DEVELOPER";
+         color: #6b38381e;
+         position: absolute;
+         -webkit-text-stroke: 3px rgb(255, 255, 255);
+         animation: typing 3s linear infinite;
+         z-index: 150;
      }
 
      @keyframes typing {
@@ -919,24 +960,8 @@
          }
      }
 
-     .hero-text .aginN {
-         position: absolute;
-         font: 4rem sans-serif;
-         font-weight: 900;
-         color: #c2000000;
-         -webkit-text-stroke: 3px rgb(255, 255, 255);
-         margin: 0px auto;
-         align-items: center;
-         text-align: center;
-         margin: 20px 0px 50px 7px;
-         overflow: hidden;
-         width: 100%;
-         animation: typing 3s linear;
-         z-index: 150;
-     }
-
      .hero-text h3 {
-         font-size: 2rem;
+         font-size: 5rem;
          font-weight: 700;
          color: rgba(255, 214, 0, 1);
          font-weight: 500;
@@ -946,14 +971,14 @@
      }
 
      .hero-text h4 {
-         font: 1em sans-serif;
+         font: 2em sans-serif;
          font-weight: 600;
          color: #c20000;
      }
 
      .hero-text button {
          border: none;
-         font-size: 20px;
+         font-size: 40px;
          font-weight: 500;
          background-color: #ffffff;
          color: rgba(255, 214, 0, 1);
@@ -978,10 +1003,10 @@
          background-size: cover;
          background-position: center;
          top: 50%;
-         left: 37%;
-         height: 300px;
-         width: 200px;
-         transform: translateY(-450px);
+         left: 50%;
+         height: 700px;
+         width: 400px;
+         transform: translate(-50%, -130%);
          border-radius: 50%;
          z-index: 99;
      }
@@ -995,7 +1020,7 @@
      .about-me {
          background-color: rgba(255, 214, 0, 1);
          display: flex;
-         gap: 5%;
+         gap: 20px;
          flex-wrap: wrap;
          background-size: cover;
          background-position: center;
@@ -1010,7 +1035,7 @@
 
      .text h2 {
          color: #c20000;
-         font-size: 2rem;
+         font-size: 4rem;
          margin-bottom: 30px;
          overflow-wrap: break-word;
      }
@@ -1018,13 +1043,13 @@
      .text p {
          margin-bottom: 20px;
          color: #3d3d3d;
-         font-size: 0.9rem;
+         font-size: 2rem;
      }
 
      #about ul {
          display: flex;
          list-style-type: none;
-         margin-top: -70px;
+         margin-top: -40px;
          padding: 10;
          gap: 35px;
      }
@@ -1034,7 +1059,7 @@
          background-color: #000000;
          padding: 5px;
          border-radius: 10px;
-         font-size: 17px;
+         font-size: 30px;
          box-shadow: 10px 10px 5px #00000023;
      }
 
@@ -1043,7 +1068,7 @@
      }
 
      .img img {
-         width: 250px;
+         width: 500px;
          transition: 1s;
          border-radius: 50%;
          margin-bottom: -90px;
@@ -1068,7 +1093,7 @@
 
      .back p {
          font-family: "Instrument Sans", sans-serif;
-         font-size: 0.8rem;
+         font-size: 2rem;
          font-weight: 500;
      }
 
@@ -1078,9 +1103,14 @@
          margin-bottom: 10px;
      }
 
+     .project{
+         width: 600px;
+         height:800px;
+        
+     }
+
      .contact {
          width: 100%;
-         height: 100vh;
          background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
      }
 
@@ -1106,20 +1136,20 @@
      }
 
      .contact-me .contact-info p {
-         font-size: 1.5rem;
+         font-size: 3rem;
          color: #000000;
      }
 
      .contact-me .contact-info a {
-         font-size: 1.3rem;
+         font-size: 3rem;
          color: #c20000;
          text-decoration: none;
      }
 
      .contact h2 {
          color: #c20000;
-         width: 230px;
-         font-size: 2.5rem;
+         width: 400px;
+         font-size: 5rem;
          padding: 90px 0px;
          margin: auto;
      }
@@ -1132,8 +1162,8 @@
      }
 
      .contact-form form {
-         width: 350px;
-         height: 500px;
+         width: 600px;
+         height: 900px;
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -1145,9 +1175,41 @@
          border-radius: 50px;
      }
 
+
+     .contact-form form label {
+         font-size: 3rem;
+         color: #000000;
+         margin-bottom: 10px;
+     }
+
+     .contact-form form input {
+         padding: 10px;
+         font-size: 3rem;
+         margin-bottom: 20px;
+         border: none;
+         border-radius: 10px;
+     }
+
+     .contact-form form textarea {
+         padding: 10px;
+         font-size: 3rem;
+         margin-bottom: 20px;
+         border: none;
+         border-radius: 10px;
+     }
+
+     .contact-form form button {
+         padding: 10px;
+         font-size: 3rem;
+         margin-bottom: 20px;
+         border: none;
+         border-radius: 10px;
+         background-color: #c20000;
+         color: #ffffff;
+         cursor: pointer;
+     }
      .contact {
          width: 100%;
-         height: 100vh;
          margin: auto;
          background: linear-gradient(90deg, rgba(255, 214, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
      }
